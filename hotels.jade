@@ -1,0 +1,71 @@
+doctype html
+html(lang = "ru")
+	head
+		title= "Sedona"
+		meta(charset = "utf-8")
+		link(href="styles/css.css" rel="stylesheet")
+		link(href="styles/reset.css" rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css") 	
+	body.body
+	.container
+		header.header
+			a.logo(href="")
+			nav.navigation.clear
+				ul
+					li
+						a(href='index.html') ИНФОРМАЦИЯ
+					li
+						a(href='') ФОТО И ВИДЕО
+					li
+						a(href='') КАРТА ШТАТА
+					li(class="active")
+						a(href='') ГОСТИНИЦЫ
+		main.hotels-page
+			.hotels-filters
+				form(action="/filter" method="post" class="row")
+					.filter-options.col.col-8
+						fieldset.options
+							h2.filter-title Инфраструктура:
+							ul
+								li
+									input(type="checkbox" id="check-1" class="form-checkbox" checked)
+									label(for="check-1" class="form-label") Бассейн
+								li
+									input(type="checkbox" id="check-2" class="form-checkbox")
+									label(for="check-2" class="form-label") ПАРКОВКА
+								li
+									input(type="checkbox" id="check-3" class="form-checkbox" checked)
+									label(for="check-3" class="form-label") WI-FI
+						fieldset.options
+							h2.filter-title ТИП ЖИЛЬЯ:
+							ul
+								li
+									input(type="checkbox" id="check-4" class="form-checkbox")
+									label(for="check-4" class="form-label") ГОСТИНИЦА
+								li
+									input(type="checkbox" id="check-5" class="form-checkbox" checked)
+									label(for="check-5" class="form-label") МОТЕЛЬ
+								li
+									input(type="checkbox" id="check-6" class="form-checkbox")
+									label(for="check-6" class="form-label") АПАРТАМЕНТЫ
+					.filter-cost.col.col-4
+						h2.filter-title СТОИМОСТЬ В СУТКИ (Р):
+						.cost-control
+							.cost-group
+								label от
+									input(type="text" class="cost-input" value="0")
+								label до
+									input(type="text" class="cost-input" value="3000")
+							.range
+						button.btn.btn-light ПОКАЗАТЬ
+		footer.footer.row
+			.hashtag.col.col-4
+				a(href="") #visitsedona
+			.social-icons.col.col-4
+				a(href="" class="btn btn-social icon-twitter")
+				a(href="" class="btn btn-social icon-facebook")
+				a(href="" class="btn btn-social icon-youtube")
+			.copyright.col.col-4
+				a(href="https://htmlacademy.ru/") website by
+					.logo-htmlacademy
+	script(src="js/main.min.js")

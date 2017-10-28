@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Sedona</title>
+    <meta charset="utf-8">
+    <link href="styles/css.css" rel="stylesheet">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+  </head>
+  <body class="body"></body>
+  <div class="container">
+    <header class="header"><a class="logo" href=""></a>
+      <nav class="navigation clear">
+        <ul>
+          <li><a href="index.html">ИНФОРМАЦИЯ</a></li>
+          <li><a href="">ФОТО И ВИДЕО</a></li>
+          <li><a href="">КАРТА ШТАТА</a></li>
+          <li class="active"><a href="">ГОСТИНИЦЫ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hotels-page">
+      <div class="hotels-filters">
+        <form class="row" action="/filter" method="post">
+          <div class="filter-options col col-8">
+            <fieldset class="options">
+              <h2 class="filter-title">Инфраструктура:</h2>
+              <ul>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-1" checked>
+                  <label class="form-label" for="check-1">Бассейн</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-2">
+                  <label class="form-label" for="check-2">ПАРКОВКА</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-3" checked>
+                  <label class="form-label" for="check-3">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="options">
+              <h2 class="filter-title">ТИП ЖИЛЬЯ:</h2>
+              <ul>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-4">
+                  <label class="form-label" for="check-4">ГОСТИНИЦА</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-5" checked>
+                  <label class="form-label" for="check-5">МОТЕЛЬ</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" id="check-6">
+                  <label class="form-label" for="check-6">АПАРТАМЕНТЫ</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-cost col col-4">
+            <h2 class="filter-title">СТОИМОСТЬ В СУТКИ (Р):</h2>
+            <div class="cost-control">
+              <div class="cost-group">
+                <label>от
+                  <input class="cost-input" type="text" value="0">
+                </label>
+                <label>до
+                  <input class="cost-input" type="text" value="3000">
+                </label>
+              </div>
+              <div class="range"></div>
+            </div>
+            <button class="btn btn-light">ПОКАЗАТЬ</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer row">
+      <div class="hashtag col col-4"><a href="">#visitsedona</a></div>
+      <div class="social-icons col col-4"><a class="btn btn-social icon-twitter" href=""></a><a class="btn btn-social icon-facebook" href=""></a><a class="btn btn-social icon-youtube" href=""></a></div>
+      <div class="copyright col col-4"><a href="https://htmlacademy.ru/">website by
+          <div class="logo-htmlacademy"></div></a></div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</html>
